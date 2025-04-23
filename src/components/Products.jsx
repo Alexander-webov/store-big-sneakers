@@ -1,20 +1,20 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getProductDataAsync } from "../features/products/productsSlice";
 import Product from "./Product";
+import { motion } from "framer-motion";
 
-function Products() {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getProductDataAsync());
-  }, [dispatch]);
-
-  const products = useSelector((store) => store.product.products);
+function Products({ visibleProduct }) {
   return (
     <div className=" grid grid-cols-4 justify-items-center gap-2 ">
-      {products.map((product) => (
-        <Product key={product.id} product={product} />
+      {visibleProduct.map((product, i) => (
+        <motion.div
+          key={product.id}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.98 }}
+          transition={{ duration: 0.3, delay: i * 0.05 }}
+        >
+          <Product product={product} />
+        </motion.div>
       ))}
     </div>
   );

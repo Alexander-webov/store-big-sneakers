@@ -1,7 +1,6 @@
 import RatingProduct from "./RatingProduct";
 
 function Product({ product }) {
-  console.log(product);
   return (
     <div className="border-2 border-gray-100 border-solid px-3 pt-3 pb-8 rounded-md mt-4 cursor-pointer">
       <img src={product.image} alt="" />

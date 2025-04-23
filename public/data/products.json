@@ -20,10 +20,10 @@
     "oldPrice": 634.83,
     "discount": 24,
     "category": "Accessories",
-    "gender": "Men",
+    "gender": "CASUAL",
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
-    "image": "/images/shoes1.png",
+    "image": "/images/shoes7.png",
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -33,10 +33,10 @@
     "oldPrice": 634.83,
     "discount": 24,
     "category": "Accessories",
-    "gender": "Men",
+    "gender": "WOMEN",
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
-    "image": "/images/shoes1.png",
+    "image": "/images/shoes6.png",
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -49,7 +49,7 @@
     "gender": "Men",
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
-    "image": "/images/shoes1.png",
+    "image": "/images/shoes4.png",
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -59,10 +59,10 @@
     "oldPrice": 634.83,
     "discount": 24,
     "category": "Accessories",
-    "gender": "Men",
+    "gender": "WOMEN",
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
-    "image": "/images/shoes1.png",
+    "image": "/images/shoes3.png",
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
 
@@ -76,7 +76,7 @@
     "gender": "Men",
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
-    "image": "/images/shoes1.png",
+    "image": "/images/shoes2.png",
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -86,10 +86,10 @@
     "oldPrice": 634.83,
     "discount": 24,
     "category": "Accessories",
-    "gender": "Men",
+    "gender": "WOMEN",
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
-    "image": "/images/shoes1.png",
+    "image": "/images/shoes4.png",
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -102,7 +102,7 @@
     "gender": "Men",
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
-    "image": "/images/shoes1.png",
+    "image": "/images/shoes6.png",
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -112,10 +112,10 @@
     "oldPrice": 634.83,
     "discount": 24,
     "category": "Accessories",
-    "gender": "Men",
+    "gender": "CASUAL",
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
-    "image": "/images/shoes1.png",
+    "image": "/images/shoes7.png",
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
 
@@ -126,10 +126,10 @@
     "oldPrice": 634.83,
     "discount": 24,
     "category": "Accessories",
-    "gender": "Men",
+    "gender": "WOMEN",
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
-    "image": "/images/shoes1.png",
+    "image": "/images/shoes3.png",
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -139,10 +139,10 @@
     "oldPrice": 634.83,
     "discount": 24,
     "category": "Accessories",
-    "gender": "Men",
+    "gender": "CASUAL",
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
-    "image": "/images/shoes1.png",
+    "image": "/images/shoes2.png",
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -152,7 +152,7 @@
     "oldPrice": 634.83,
     "discount": 24,
     "category": "Accessories",
-    "gender": "Men",
+    "gender": "UNISEX",
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
     "image": "/images/shoes1.png",
@@ -165,10 +165,10 @@
     "oldPrice": 634.83,
     "discount": 24,
     "category": "Accessories",
-    "gender": "Men",
+    "gender": "CASUAL",
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
-    "image": "/images/shoes1.png",
+    "image": "/images/shoes4.png",
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
 
@@ -179,10 +179,10 @@
     "oldPrice": 634.83,
     "discount": 24,
     "category": "Accessories",
-    "gender": "Men",
+    "gender": "UNISEX",
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
-    "image": "/images/shoes1.png",
+    "image": "/images/shoes2.png",
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -192,10 +192,10 @@
     "oldPrice": 634.83,
     "discount": 24,
     "category": "Accessories",
-    "gender": "Men",
+    "gender": "UNISEX",
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
-    "image": "/images/shoes1.png",
+    "image": "/images/shoes6.png",
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -205,10 +205,10 @@
     "oldPrice": 634.83,
     "discount": 24,
     "category": "Accessories",
-    "gender": "Men",
+    "gender": "CASUAL",
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
-    "image": "/images/shoes1.png",
+    "image": "/images/shoes3.png",
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   }
 ]

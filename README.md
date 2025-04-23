@@ -6,7 +6,8 @@
 
 ## 🚀 Live Demo
 
-👉 [Click here to view the app](https://alexander-webov.github.io/store-big-sneakers)
+👉 [🔗 View Live Demo](https://store-big-sneakers.vercel.app)
+
 
 ---
 

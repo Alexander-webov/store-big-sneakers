@@ -1,6 +1,7 @@
 import iconUser from "../assets/images/icon-user.svg";
 import iconSearch from "../assets/images/search-icon.svg";
 import iconCard from "../assets/images/icon-card.svg";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -13,18 +14,18 @@ function Header() {
           </select>
           <ul className="flex  items-center">
             <li>
-              <a href="#" className="flex items-center mr-10">
+              <NavLink to="/profile" className="flex items-center mr-10">
                 <img className="h-6 mr-1" src={iconUser} alt=" My profile" />
                 <span>My profile</span>
-              </a>
+              </NavLink>
             </li>
             <li className="mr-10 relative">
-              <button>
+              <NavLink to="/card">
                 <img src={iconCard} alt="card" />
                 <span className="flex justify-center items-center absolute top-[-10px] right-[-10px] w-5 h-5 rounded-full bg-[#FB7181] text-white text-xs border-white border-2">
                   1
                 </span>
-              </button>
+              </NavLink>
             </li>
             <li className="flex items-center relative">
               <img className="absolute left-1" src={iconSearch} alt="search" />
@@ -40,16 +41,16 @@ function Header() {
         <nav className="mt-7">
           <ul className="flex font-bold text-xl">
             <li className="flex-1 ">
-              <a href="#">BIG-SNEAKERS</a>
+              <NavLink to="/">BIG-SNEAKERS</NavLink>
             </li>
             <li className="mr-10">
-              <a href="">HOME</a>{" "}
+              <NavLink to="/">HOME</NavLink>
             </li>
             <li className="mr-10">
-              <a href="">SNEAKERS</a>
+              <NavLink to="/products">SNEAKERS</NavLink>
             </li>
             <li>
-              <a href="">CONTACT</a>
+              <NavLink to="/contact">CONTACT</NavLink>
             </li>
           </ul>
         </nav>

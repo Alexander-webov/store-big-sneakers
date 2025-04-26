@@ -10,6 +10,12 @@
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
     "image": "/images/shoes1.png",
+    "thumbsGallery": [
+      "/images/shoes1.png",
+      "/images/shoes1.png",
+      "/images/shoes1.png",
+      "/images/shoes1.png"
+    ],
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
 
@@ -24,6 +30,12 @@
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
     "image": "/images/shoes7.png",
+    "thumbsGallery": [
+      "/images/shoes7.png",
+      "/images/shoes7.png",
+      "/images/shoes7.png",
+      "/images/shoes7.png"
+    ],
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -37,6 +49,12 @@
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
     "image": "/images/shoes6.png",
+    "thumbsGallery": [
+      "/images/shoes6.png",
+      "/images/shoes6.png",
+      "/images/shoes6.png",
+      "/images/shoes6.png"
+    ],
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -50,6 +68,12 @@
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
     "image": "/images/shoes4.png",
+    "thumbsGallery": [
+      "/images/shoes4.png",
+      "/images/shoes4.png",
+      "/images/shoes4.png",
+      "/images/shoes4.png"
+    ],
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -63,6 +87,12 @@
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
     "image": "/images/shoes3.png",
+    "thumbsGallery": [
+      "/images/shoes3.png",
+      "/images/shoes3.png",
+      "/images/shoes3.png",
+      "/images/shoes3.png"
+    ],
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
 
@@ -77,6 +107,12 @@
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
     "image": "/images/shoes2.png",
+    "thumbsGallery": [
+      "/images/shoes2.png",
+      "/images/shoes2.png",
+      "/images/shoes2.png",
+      "/images/shoes2.png"
+    ],
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -90,6 +126,12 @@
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
     "image": "/images/shoes4.png",
+    "thumbsGallery": [
+      "/images/shoes4.png",
+      "/images/shoes4.png",
+      "/images/shoes4.png",
+      "/images/shoes4.png"
+    ],
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -103,6 +145,12 @@
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
     "image": "/images/shoes6.png",
+    "thumbsGallery": [
+      "/images/shoes6.png",
+      "/images/shoes6.png",
+      "/images/shoes6.png",
+      "/images/shoes6.png"
+    ],
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -116,6 +164,12 @@
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
     "image": "/images/shoes7.png",
+    "thumbsGallery": [
+      "/images/shoes7.png",
+      "/images/shoes7.png",
+      "/images/shoes7.png",
+      "/images/shoes7.png"
+    ],
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
 
@@ -130,6 +184,12 @@
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
     "image": "/images/shoes3.png",
+    "thumbsGallery": [
+      "/images/shoes3.png",
+      "/images/shoes3.png",
+      "/images/shoes3.png",
+      "/images/shoes3.png"
+    ],
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -143,6 +203,12 @@
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
     "image": "/images/shoes2.png",
+    "thumbsGallery": [
+      "/images/shoes2.png",
+      "/images/shoes2.png",
+      "/images/shoes2.png",
+      "/images/shoes2.png"
+    ],
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -156,6 +222,12 @@
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
     "image": "/images/shoes1.png",
+    "thumbsGallery": [
+      "/images/shoes1.png",
+      "/images/shoes1.png",
+      "/images/shoes1.png",
+      "/images/shoes1.png"
+    ],
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -169,6 +241,12 @@
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
     "image": "/images/shoes4.png",
+    "thumbsGallery": [
+      "/images/shoes4.png",
+      "/images/shoes4.png",
+      "/images/shoes4.png",
+      "/images/shoes4.png"
+    ],
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
 
@@ -183,6 +261,12 @@
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
     "image": "/images/shoes2.png",
+    "thumbsGallery": [
+      "/images/shoes1.png",
+      "/images/shoes1.png",
+      "/images/shoes1.png",
+      "/images/shoes1.png"
+    ],
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -196,6 +280,12 @@
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
     "image": "/images/shoes6.png",
+    "thumbsGallery": [
+      "/images/shoes6.png",
+      "/images/shoes6.png",
+      "/images/shoes6.png",
+      "/images/shoes6.png"
+    ],
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   },
   {
@@ -209,6 +299,12 @@
     "colors": ["red", "blue", "black", "yellow"],
     "sizes": ["XS", "S", "M", "L"],
     "image": "/images/shoes3.png",
+    "thumbsGallery": [
+      "/images/shoes3.png",
+      "/images/shoes3.png",
+      "/images/shoes3.png",
+      "/images/shoes3.png"
+    ],
     "description": "Elevate your everyday look with the New Balance Men's Casual Shoe..."
   }
 ]

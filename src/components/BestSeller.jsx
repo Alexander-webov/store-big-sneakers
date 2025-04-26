@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import Products from "./Products";
+import Products from "../features/products/Products";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getProductDataAsync } from "../features/products/productsSlice";

@@ -8,7 +8,7 @@
     "category": "Accessories",
     "gender": "Men",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["XS", "S", "M", "L"],
+    "sizes": ["9.5", "10", "11", "11.5", "12"],
     "image": "/images/shoes1.png",
     "thumbsGallery": [
       "/images/shoes1.png",
@@ -28,7 +28,7 @@
     "category": "Accessories",
     "gender": "CASUAL",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["XS", "S", "M", "L"],
+    "sizes": ["9.5", "10", "11", "11.5", "12"],
     "image": "/images/shoes7.png",
     "thumbsGallery": [
       "/images/shoes7.png",
@@ -47,7 +47,7 @@
     "category": "Accessories",
     "gender": "WOMEN",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["XS", "S", "M", "L"],
+    "sizes": ["9.5", "10", "11", "11.5", "12"],
     "image": "/images/shoes6.png",
     "thumbsGallery": [
       "/images/shoes6.png",
@@ -66,7 +66,7 @@
     "category": "Accessories",
     "gender": "Men",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["XS", "S", "M", "L"],
+    "sizes": ["9.5", "10", "11", "11.5", "12"],
     "image": "/images/shoes4.png",
     "thumbsGallery": [
       "/images/shoes4.png",
@@ -85,7 +85,7 @@
     "category": "Accessories",
     "gender": "WOMEN",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["XS", "S", "M", "L"],
+    "sizes": ["9.5", "10", "11", "11.5", "12"],
     "image": "/images/shoes3.png",
     "thumbsGallery": [
       "/images/shoes3.png",
@@ -105,7 +105,7 @@
     "category": "Accessories",
     "gender": "Men",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["XS", "S", "M", "L"],
+    "sizes": ["9.5", "10", "11", "11.5", "12"],
     "image": "/images/shoes2.png",
     "thumbsGallery": [
       "/images/shoes2.png",
@@ -124,7 +124,7 @@
     "category": "Accessories",
     "gender": "WOMEN",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["XS", "S", "M", "L"],
+    "sizes": ["9.5", "10", "11", "11.5", "12"],
     "image": "/images/shoes4.png",
     "thumbsGallery": [
       "/images/shoes4.png",
@@ -143,7 +143,7 @@
     "category": "Accessories",
     "gender": "Men",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["XS", "S", "M", "L"],
+    "sizes": ["9.5", "10", "11", "11.5", "12"],
     "image": "/images/shoes6.png",
     "thumbsGallery": [
       "/images/shoes6.png",
@@ -162,7 +162,7 @@
     "category": "Accessories",
     "gender": "CASUAL",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["XS", "S", "M", "L"],
+    "sizes": ["9.5", "10", "11", "11.5", "12"],
     "image": "/images/shoes7.png",
     "thumbsGallery": [
       "/images/shoes7.png",
@@ -182,7 +182,7 @@
     "category": "Accessories",
     "gender": "WOMEN",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["XS", "S", "M", "L"],
+    "sizes": ["9.5", "10", "11", "11.5", "12"],
     "image": "/images/shoes3.png",
     "thumbsGallery": [
       "/images/shoes3.png",
@@ -201,7 +201,7 @@
     "category": "Accessories",
     "gender": "CASUAL",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["XS", "S", "M", "L"],
+    "sizes": ["9.5", "10", "11", "11.5", "12"],
     "image": "/images/shoes2.png",
     "thumbsGallery": [
       "/images/shoes2.png",
@@ -220,7 +220,7 @@
     "category": "Accessories",
     "gender": "UNISEX",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["XS", "S", "M", "L"],
+    "sizes": ["9.5", "10", "11", "11.5", "12"],
     "image": "/images/shoes1.png",
     "thumbsGallery": [
       "/images/shoes1.png",
@@ -239,7 +239,7 @@
     "category": "Accessories",
     "gender": "CASUAL",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["XS", "S", "M", "L"],
+    "sizes": ["9.5", "10", "11", "11.5", "12"],
     "image": "/images/shoes4.png",
     "thumbsGallery": [
       "/images/shoes4.png",
@@ -259,7 +259,7 @@
     "category": "Accessories",
     "gender": "UNISEX",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["XS", "S", "M", "L"],
+    "sizes": ["9.5", "10", "11", "11.5", "12"],
     "image": "/images/shoes2.png",
     "thumbsGallery": [
       "/images/shoes1.png",
@@ -278,7 +278,7 @@
     "category": "Accessories",
     "gender": "UNISEX",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["XS", "S", "M", "L"],
+    "sizes": ["9.5", "10", "11", "11.5", "12"],
     "image": "/images/shoes6.png",
     "thumbsGallery": [
       "/images/shoes6.png",
@@ -297,7 +297,7 @@
     "category": "Accessories",
     "gender": "CASUAL",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["XS", "S", "M", "L"],
+    "sizes": ["9.5", "10", "11", "11.5", "12"],
     "image": "/images/shoes3.png",
     "thumbsGallery": [
       "/images/shoes3.png",

@@ -25,9 +25,9 @@ function Thumbnails({ thumbsGallery }) {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
       >
-        {thumbsGallery.map((urlImage) => {
+        {thumbsGallery.map((urlImage, i) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={i}>
               <img src={urlImage} />
             </SwiperSlide>
           );
@@ -43,9 +43,9 @@ function Thumbnails({ thumbsGallery }) {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper"
       >
-        {thumbsGallery.map((urlImage) => {
+        {thumbsGallery.map((urlImage, i) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={i}>
               <img src={urlImage} />
             </SwiperSlide>
           );

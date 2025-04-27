@@ -4,7 +4,7 @@ import Products from "./pages/Products";
 import Applayout from "./Applayout";
 import Contact from "./pages/Contact";
 import MyProfile from "./pages/MyProfile";
-import Cart from "./pages/Cart";
+import Cart from "./features/Cart/Cart";
 import Error from "./pages/Error";
 import DetailsProduct from "./pages/DetailsProduct";
 

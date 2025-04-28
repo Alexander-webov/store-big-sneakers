@@ -2,8 +2,13 @@ import iconUser from "../assets/images/icon-user.svg";
 import iconSearch from "../assets/images/search-icon.svg";
 import iconCard from "../assets/images/icon-card.svg";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Header() {
+  const cart = useSelector((store) => store.cart.cart);
+
+  const quantityInCart = cart.reduce((acc, item) => acc + item.quantity, 0);
+
   return (
     <header className="py-7">
       <div>
@@ -20,10 +25,10 @@ function Header() {
               </NavLink>
             </li>
             <li className="mr-10 relative">
-              <NavLink to="/card">
-                <img src={iconCard} alt="card" />
+              <NavLink to="/cart">
+                <img src={iconCard} alt="cart" />
                 <span className="flex justify-center items-center absolute top-[-10px] right-[-10px] w-5 h-5 rounded-full bg-[#FB7181] text-white text-xs border-white border-2">
-                  1
+                  {quantityInCart}
                 </span>
               </NavLink>
             </li>

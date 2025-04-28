@@ -2,14 +2,17 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import RatingProduct from "../components/RatingProduct";
 import Thumbnails from "../components/Thumbnails";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { getProductDataAsync } from "../features/products/productsSlice";
 import CounterProduct from "../components/CounterProduct";
 import AddToCart from "../components/AddToCart";
 import FavoriteProduct from "../components/FavoriteProduct";
 import SizeProduct from "../components/SizeProduct";
+import AdSlider from "../components/AdSlider";
 
 function DetailsProduct() {
+  const [size, setSize] = useState(null);
+  const [count, setCount] = useState(1);
   const dispatch = useDispatch();
   const { productId } = useParams();
   const products = useSelector((store) => store.product.products);
@@ -20,6 +23,13 @@ function DetailsProduct() {
       dispatch(getProductDataAsync());
     }
   }, [dispatch, products.length]);
+
+  useEffect(() => {
+    if (product && !size) {
+      setSize(product?.sizes?.[0] || null);
+    }
+  }, [product, size]);
+
   if (!product) {
     return (
       <div className="text-center mt-20 text-xl text-gray-500">
@@ -28,14 +38,23 @@ function DetailsProduct() {
     );
   }
 
+  const order = {
+    id: product.id,
+    quantity: count,
+    title: product.title,
+    image: product.image,
+    price: product.price,
+    size: size,
+  };
+
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between mb-20">
       <div>
         <div className="flex ">
           <div className="max-w-sm">
             <Thumbnails thumbsGallery={product?.thumbsGallery} />
           </div>
-          <div className="ml-6 w-96">
+          <div className="ml-6 w-96 flex flex-col">
             <h4 className="text-2xl">{product.title}</h4>
             <div className="flex mt-5 pb-5 border-solid border-[#F6F7F8] border-b-2">
               <RatingProduct />
@@ -52,8 +71,8 @@ function DetailsProduct() {
                 {product.discount}% Off
               </span>
             </div>
-            <div>
-              <ul className="w-60 text-sm text-[#262626] mt-4 border-solid pb-5 border-[#F6F7F8] border-b-2">
+            <div className="flex-1">
+              <ul className="w-60 text-sm text-[#262626] mt-4">
                 <li className="flex justify-between mt-3">
                   <span>Availability:</span>
                   <span>In stock</span>
@@ -65,20 +84,23 @@ function DetailsProduct() {
                 <li className="mt-3">Free shipping</li>
               </ul>
             </div>
-            <div className="flex mt-5">{product.description}</div>
 
-            <SizeProduct product={product} />
-            <div className="flex">
-              <CounterProduct />
-              <AddToCart />
+            <SizeProduct
+              product={product}
+              onChange={(e) => setsize(e.target.value)}
+            />
+
+            <div className="flex justify-between mt-6 ">
+              <CounterProduct count={count} setCount={setCount} />
+              <AddToCart cartItems={order} />
               <FavoriteProduct />
             </div>
           </div>
         </div>
       </div>
       <div className="">
-        <h3>BEST SELLER</h3>
-        <div>slider</div>
+        <h3 className="text-[#C1C8CE] ">BEST SELLER</h3>
+        <AdSlider />
       </div>
     </div>
   );

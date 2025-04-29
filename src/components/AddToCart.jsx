@@ -2,12 +2,12 @@ import { useDispatch } from "react-redux";
 import iconCartForButton from "../assets/images/cart2.png";
 import { addItem } from "../features/Cart/cartSlice";
 
-function AddToCart({ cartItems = [] }) {
-  console.log(cartItems);
+function AddToCart({ cartItems = [], notify }) {
   const dispatch = useDispatch();
 
   function handelAddCart() {
     dispatch(addItem(cartItems));
+    notify;
   }
 
   return (

@@ -9,6 +9,7 @@ import AddToCart from "../components/AddToCart";
 import FavoriteProduct from "../components/FavoriteProduct";
 import SizeProduct from "../components/SizeProduct";
 import AdSlider from "../components/AdSlider";
+import Toast from "../components/Toast";
 
 function DetailsProduct() {
   const [size, setSize] = useState(null);
@@ -92,7 +93,10 @@ function DetailsProduct() {
 
             <div className="flex justify-between mt-6 ">
               <CounterProduct count={count} setCount={setCount} />
-              <AddToCart cartItems={order} />
+              <Toast text="Item was added in cart">
+                <AddToCart cartItems={order} />
+              </Toast>
+
               <FavoriteProduct />
             </div>
           </div>

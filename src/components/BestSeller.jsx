@@ -10,23 +10,18 @@ function BestSeller() {
     dispatch(getProductDataAsync());
   }, [dispatch]);
 
-  const [visibleCount, setVisibleCount] = useState(8);
   const products = useSelector((store) => store.product.products);
   const [filterProducts, setFilterProducts] = useState([]);
   const [activeFilter, setActiveFilter] = useState("ALL");
 
   const resetFilter = useCallback(() => {
-    const visibleProduct = products.slice(0, visibleCount);
+    const visibleProduct = products.slice(0, 16);
     setFilterProducts(visibleProduct);
-  }, [products, visibleCount]);
+  }, [products]);
 
   useEffect(() => {
     resetFilter();
   }, [resetFilter]);
-
-  const showMoreProducts = () => {
-    setVisibleCount((count) => count + 4);
-  };
 
   const handelFilterProducts = (id) => {
     setActiveFilter(id);
@@ -34,9 +29,8 @@ function BestSeller() {
       id === "ALL"
         ? products
         : products.filter((el) => el.gender?.toUpperCase() === id);
-    const visibleProduct = filtered.slice(0, visibleCount);
+    const visibleProduct = filtered.slice(0, 8);
     setFilterProducts(visibleProduct);
-    setVisibleCount(8);
   };
 
   return (
@@ -86,15 +80,6 @@ function BestSeller() {
       </ul>
 
       <Products visibleProduct={filterProducts} />
-
-      {visibleCount < products.length ? (
-        <button
-          className="block text-[#33A0FF]  text-2xl font-medium border-b-4 border-[#33A0FF] border-solid mx-auto mt-10"
-          onClick={showMoreProducts}
-        >
-          LOAD MORE
-        </button>
-      ) : null}
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import iconCartForButton from "../assets/images/cart2.png";
-import { addItem } from "../features/cart_temp/cartSlice";
+import { addItem } from "../features/cart/cartSlice";
 
 function AddToCart({ cartItems = [], notify }) {
   const dispatch = useDispatch();

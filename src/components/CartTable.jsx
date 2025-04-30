@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { removeItem } from "../features/Cart/cartSlice";
+import { removeItem } from "../features/cart/cartSlice";
 import iconDel from "../assets/images/x.svg";
 
 function CartTable({ cart }) {

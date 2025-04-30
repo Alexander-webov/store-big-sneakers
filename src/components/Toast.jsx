@@ -1,5 +1,4 @@
 import { ToastContainer, toast } from "react-toastify";
-import AddToCart from "./AddToCart";
 
 function Toast({ text, children }) {
   const notify = () => toast(text);

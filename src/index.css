@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+
+    .noUi-handle::before,
+    .noUi-handle::after {
+        content: none;
+    }
+
+    .noUi-target::before,
+    .noUi-target::after {
+        display: none;
+    }
+
+
+
+    .noUi-target {
+        background: #d1d5db !important;
+        height: 5px !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+}
+
+a.active {
+    color: #06B6D4;
+}

@@ -1,7 +1,7 @@
 import iconUser from "../assets/images/icon-user.svg";
 import iconSearch from "../assets/images/search-icon.svg";
 import iconCard from "../assets/images/icon-card.svg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 function Header() {
@@ -46,13 +46,13 @@ function Header() {
         <nav className="mt-7">
           <ul className="flex font-bold text-xl">
             <li className="flex-1 ">
-              <NavLink to="/">BIG-SNEAKERS</NavLink>
+              <Link to="/">BIG-SNEAKERS</Link>
             </li>
             <li className="mr-10">
               <NavLink to="/">HOME</NavLink>
             </li>
             <li className="mr-10">
-              <NavLink to="/products">SNEAKERS</NavLink>
+              <NavLink to="/AllProducts">SNEAKERS</NavLink>
             </li>
             <li>
               <NavLink to="/contact">CONTACT</NavLink>

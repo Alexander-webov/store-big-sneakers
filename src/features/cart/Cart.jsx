@@ -3,12 +3,14 @@ import VoucherCode from "../../components/VoucherCode";
 import CartTable from "../../components/CartTable";
 import { getCart, getTotalPay } from "./cartSlice";
 import TotalPay from "../../components/TotalPay";
+import EmptyCart from "../../components/EmptyCart";
 
 function Cart() {
   const cart = useSelector(getCart);
   const total = useSelector(getTotalPay);
   const fee = useSelector((store) => store.cart.fee);
 
+  if (cart.length === 0) return <EmptyCart />;
   return (
     <div>
       <div className="overflow-x-auto">

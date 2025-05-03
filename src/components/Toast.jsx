@@ -6,7 +6,6 @@ function Toast({ text, children }) {
   return (
     <div className="">
       <div onClick={notify}>{children}</div>
-
       <ToastContainer />
     </div>
   );

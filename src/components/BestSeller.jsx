@@ -79,7 +79,7 @@ function BestSeller() {
         </li>
       </ul>
 
-      <Products visibleProduct={filterProducts} />
+      <Products items={filterProducts} />
     </div>
   );
 }

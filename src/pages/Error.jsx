@@ -1,13 +1,13 @@
-import { useNavigate, useRouteError } from "react-router-dom";
+import { useRouteError } from "react-router-dom";
+import ButtonBack from "../components/ButtonBack";
 
 function Error() {
-  const navigate = useNavigate();
   const error = useRouteError();
   return (
-    <div>
-      <h1>Something went wrong 😢</h1>
-      <p>{error.data || error.message}</p>
-      <button onClick={() => navigate(-1)}>&larr; Go back</button>
+    <div className="flex justify-center items-center flex-col h-screen w-screen">
+      <h1 className="text-6xl mb-5">Something went wrong 😢</h1>
+      <p className="text-2xl mb-5">{error.data || error.message}</p>
+      <ButtonBack />
     </div>
   );
 }

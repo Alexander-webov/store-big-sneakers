@@ -1,10 +1,10 @@
 import Product from "./Product";
 import { motion } from "framer-motion";
 
-function Products({ visibleProduct }) {
+function Products({ items = [] }) {
   return (
     <div className=" grid grid-cols-4 justify-items-center gap-2 ">
-      {visibleProduct.map((product, i) => (
+      {items.map((product, i) => (
         <motion.div
           key={product.id}
           initial={{ opacity: 0, y: 20 }}

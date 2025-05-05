@@ -5,6 +5,9 @@ import { getProductDataAsync } from "../features/products/productsSlice";
 import Products from "../features/products/Products";
 import AdBanner from "../components/AdBanner";
 
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
+
 function AllProducts() {
   const [priceRange, setPriceRange] = useState([0, 100]);
   const [selectedRange, setSelectedRange] = useState([0, 100]);
@@ -13,6 +16,8 @@ function AllProducts() {
   const [selectedSizes, setSelectedSizes] = useState([]);
 
   const sneakears = useSelector((store) => store.product.products);
+  const isLoading = useSelector((store) => store.product.isLoading);
+
   const dispatch = useDispatch();
 
   const filteredSneakers = useMemo(() => {
@@ -40,7 +45,6 @@ function AllProducts() {
       const min = Math.min(...prices);
       const max = Math.max(...prices);
       setPriceRange([min, max]);
-      setSelectedRange([min, max]);
     }
   }, [sneakears]);
 
@@ -61,7 +65,7 @@ function AllProducts() {
   }
 
   return (
-    <div className="flex mb-24">
+    <div className="flex mb-24 ">
       <div className="w-80 mr-16 mt-5">
         <div className="bg-[#F6F7F8] p-5">
           <span className="uppercase">Prices</span>
@@ -99,12 +103,10 @@ function AllProducts() {
             })}
           </div>
           <div>
-            {" "}
             <button
               className="mt-8 px-3 py-1 bg-gray-300 rounded hover:bg-gray-400"
               onClick={() => {
                 setSelectedSizes([]);
-                selectedRange([0, 100]);
               }}
             >
               Clear size filters
@@ -115,7 +117,26 @@ function AllProducts() {
       <div className="flex-1">
         <AdBanner />
         <div>Filtered products: {filteredSneakers.length}</div>
-        <Products cols={3} items={filteredSneakers} />
+        {isLoading ? (
+          <div className="grid grid-cols-3 gap-5">
+            {Array.from({ length: 16 }).map((_, idx) => (
+              <div
+                className="flex flex-col shadow-md rounded-lg p-2 bg-white"
+                key={idx}
+              >
+                <Skeleton height={300} borderRadius={12} />
+                <Skeleton height={20} className="mt-2" />
+                <Skeleton height={20} width={100} className="mt-1" />
+              </div>
+            ))}
+          </div>
+        ) : filteredSneakers.length === 0 ? (
+          <div className="text-center text-gray-500 mt-10 ">
+            No products found. Try adjusting your filters.
+          </div>
+        ) : (
+          <Products cols={3} items={filteredSneakers} />
+        )}
       </div>
     </div>
   );

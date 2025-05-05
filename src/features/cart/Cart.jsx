@@ -9,6 +9,7 @@ function Cart() {
   const cart = useSelector(getCart);
   const total = useSelector(getTotalPay);
   const fee = useSelector((store) => store.cart.fee);
+  const coupon = useSelector((store) => store.cart.coupon);
 
   if (cart.length === 0) return <EmptyCart />;
   return (
@@ -22,7 +23,7 @@ function Cart() {
           <VoucherCode />
         </div>
         <div>
-          <TotalPay total={total} fee={fee} />
+          <TotalPay total={total} fee={fee} coupon={coupon} />
         </div>
       </div>
     </div>

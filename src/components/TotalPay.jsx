@@ -1,4 +1,6 @@
-function TotalPay({ total, fee }) {
+import { Link } from "react-router-dom";
+
+function TotalPay({ total, fee, coupon }) {
   return (
     <div>
       <ul className="text-[#262626] w-96">
@@ -12,16 +14,20 @@ function TotalPay({ total, fee }) {
         </li>
         <li className="flex justify-between mb-4">
           <span>Coupon</span>
-          <span>No</span>
+          <span>{coupon > 0 ? `${coupon}% OFF` : "No"}</span>
         </li>
         <li className="text-[#22262A] flex justify-between mb-10">
           <span>TOTAL</span>
-          <span>${fee + total}</span>
+          <span>${total}</span>
         </li>
       </ul>
-      <button className="w-96 bg-[#4440FF] text-white px-8 py-4">
-        Check out
-      </button>
+
+      <Link
+        to="/checkout"
+        className="w-96 bg-[#4440FF] text-white px-8 py-4 rounded text-center block hover:bg-[#3330d0] transition"
+      >
+        Proceed to Checkout
+      </Link>
     </div>
   );
 }

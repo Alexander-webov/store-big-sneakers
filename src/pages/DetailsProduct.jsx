@@ -10,6 +10,7 @@ import FavoriteProduct from "../components/FavoriteProduct";
 import SizeProduct from "../components/SizeProduct";
 import AdSlider from "../components/AdSlider";
 import Toast from "../components/Toast";
+import { Helmet } from "react-helmet";
 
 function DetailsProduct() {
   const [size, setSize] = useState(null);
@@ -49,64 +50,85 @@ function DetailsProduct() {
   };
 
   return (
-    <div className="flex justify-between mb-20">
-      <div>
-        <div className="flex ">
-          <div className="max-w-sm">
-            <Thumbnails thumbsGallery={product?.thumbsGallery} />
-          </div>
-          <div className="ml-6 w-96 flex flex-col">
-            <h4 className="text-2xl">{product.title}</h4>
-            <div className="flex mt-5 pb-5 border-solid border-[#F6F7F8] border-b-2">
-              <RatingProduct />
-              <span className="ml-4">0 reviews</span>
+    <>
+      <Helmet>
+        <title>{product.title} - Store Big Sneakers</title>
+        <meta
+          name="description"
+          content={`Buy ${product.title} for just $${
+            product.price
+          }. Sizes available: ${
+            product.sizes?.join(", ") || "Various sizes"
+          }. Great quality sneakers at affordable prices.`}
+        />
+        <meta property="og:title" content={product.title} />
+        <meta
+          property="og:description"
+          content={`Buy ${product.title} now. Sizes: ${product.sizes?.join(
+            ", "
+          )}.`}
+        />
+        <meta property="og:image" content={product.image} />
+      </Helmet>
+      <div className="flex justify-between mb-20">
+        <div>
+          <div className="flex ">
+            <div className="max-w-sm">
+              <Thumbnails thumbsGallery={product?.thumbsGallery} />
             </div>
-            <div className="mt-3">
-              <span className="text-[#4440FF] text-lg font-semibold">
-                ${product.price}
-              </span>
-              <span className="text-[#9098B1] mx-3 line-through ">
-                ${product.oldPrice}
-              </span>
-              <span className="text-[#FB7181] text-sm">
-                {product.discount}% Off
-              </span>
-            </div>
-            <div className="flex-1">
-              <ul className="w-60 text-sm text-[#262626] mt-4">
-                <li className="flex justify-between mt-3">
-                  <span>Availability:</span>
-                  <span>In stock</span>
-                </li>
-                <li className="flex justify-between mt-3">
-                  <span>Category:</span>
-                  <span>Accessories</span>
-                </li>
-                <li className="mt-3">Free shipping</li>
-              </ul>
-            </div>
+            <div className="ml-6 w-96 flex flex-col">
+              <h4 className="text-2xl">{product.title}</h4>
+              <div className="flex mt-5 pb-5 border-solid border-[#F6F7F8] border-b-2">
+                <RatingProduct />
+                <span className="ml-4">0 reviews</span>
+              </div>
+              <div className="mt-3">
+                <span className="text-[#4440FF] text-lg font-semibold">
+                  ${product.price}
+                </span>
+                <span className="text-[#9098B1] mx-3 line-through ">
+                  ${product.oldPrice}
+                </span>
+                <span className="text-[#FB7181] text-sm">
+                  {product.discount}% Off
+                </span>
+              </div>
+              <div className="flex-1">
+                <ul className="w-60 text-sm text-[#262626] mt-4">
+                  <li className="flex justify-between mt-3">
+                    <span>Availability:</span>
+                    <span>In stock</span>
+                  </li>
+                  <li className="flex justify-between mt-3">
+                    <span>Category:</span>
+                    <span>Accessories</span>
+                  </li>
+                  <li className="mt-3">Free shipping</li>
+                </ul>
+              </div>
 
-            <SizeProduct
-              product={product}
-              onChange={(e) => setsize(e.target.value)}
-            />
+              <SizeProduct
+                product={product}
+                onChange={(e) => setSize(e.target.value)}
+              />
 
-            <div className="flex justify-between mt-6 ">
-              <CounterProduct count={count} setCount={setCount} />
-              <Toast text="Item was added in cart">
-                <AddToCart cartItems={order} />
-              </Toast>
+              <div className="flex justify-between mt-6 ">
+                <CounterProduct count={count} setCount={setCount} />
+                <Toast text="Item was added in cart">
+                  <AddToCart cartItems={order} />
+                </Toast>
 
-              <FavoriteProduct />
+                <FavoriteProduct />
+              </div>
             </div>
           </div>
         </div>
+        <div className="">
+          <h3 className="text-[#C1C8CE] ">BEST SELLER</h3>
+          <AdSlider />
+        </div>
       </div>
-      <div className="">
-        <h3 className="text-[#C1C8CE] ">BEST SELLER</h3>
-        <AdSlider />
-      </div>
-    </div>
+    </>
   );
 }
 

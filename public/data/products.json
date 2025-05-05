@@ -30,7 +30,7 @@
     "priority": "bestSeller",
     "gender": "CASUAL",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["9.5", "10", "11", "11.5", "12"],
+    "sizes": ["11", "11.5", "12"],
     "image": "/images/shoes7.png",
     "thumbsGallery": [
       "/images/shoes7.png",
@@ -50,7 +50,7 @@
     "priority": "bestSeller",
     "gender": "WOMEN",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["9.5", "10", "11", "11.5", "12"],
+    "sizes": ["9.5", "10", "12"],
     "image": "/images/shoes6.png",
     "thumbsGallery": [
       "/images/shoes6.png",
@@ -70,7 +70,7 @@
     "priority": "bestSeller",
     "gender": "Men",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["9.5", "10", "11", "11.5", "12"],
+    "sizes": ["9.5"],
     "image": "/images/shoes4.png",
     "thumbsGallery": [
       "/images/shoes4.png",
@@ -171,7 +171,7 @@
     "priority": "bestSeller",
     "gender": "CASUAL",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["9.5", "10", "11", "11.5", "12"],
+    "sizes": ["10", "11", "12"],
     "image": "/images/shoes7.png",
     "thumbsGallery": [
       "/images/shoes7.png",
@@ -192,7 +192,7 @@
     "priority": "bestSeller",
     "gender": "WOMEN",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["9.5", "10", "11", "11.5", "12"],
+    "sizes": ["9.5", "12"],
     "image": "/images/shoes3.png",
     "thumbsGallery": [
       "/images/shoes3.png",
@@ -232,7 +232,7 @@
     "priority": "bestSeller",
     "gender": "UNISEX",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["9.5", "10", "11", "11.5", "12"],
+    "sizes": ["9.5", "10", "11", "12"],
     "image": "/images/shoes1.png",
     "thumbsGallery": [
       "/images/shoes1.png",
@@ -252,7 +252,7 @@
     "priority": "bestSeller",
     "gender": "CASUAL",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["9.5", "10", "11", "11.5", "12"],
+    "sizes": ["9.5", "10", "11.5", "12"],
     "image": "/images/shoes4.png",
     "thumbsGallery": [
       "/images/shoes4.png",
@@ -273,7 +273,7 @@
     "priority": "bestSeller",
     "gender": "UNISEX",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["9.5", "10", "11", "11.5", "12"],
+    "sizes": ["9.5"],
     "image": "/images/shoes2.png",
     "thumbsGallery": [
       "/images/shoes2.png",
@@ -313,7 +313,7 @@
     "priority": "bestSeller",
     "gender": "CASUAL",
     "colors": ["red", "blue", "black", "yellow"],
-    "sizes": ["9.5", "10", "11", "11.5", "12"],
+    "sizes": ["9.5", "11", "11.5", "12"],
     "image": "/images/shoes3.png",
     "thumbsGallery": [
       "/images/shoes3.png",

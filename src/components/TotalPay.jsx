@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 
-function TotalPay({ total, fee, coupon }) {
+function TotalPay({ total, fee, coupon, subtotal }) {
   return (
     <div>
       <ul className="text-[#262626] w-96">
         <li className="flex justify-between mb-4">
           <span>Subtotal</span>
-          <span>${total}</span>
+          <span>${subtotal}</span>
         </li>
         <li className="flex justify-between mb-4">
           <span>Shipping fee</span>

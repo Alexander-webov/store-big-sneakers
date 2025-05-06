@@ -1,61 +1,33 @@
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useMemo, useState } from "react";
-import DoubleSlider from "../components/DoubleSlider";
+import { useEffect } from "react";
 import { getProductDataAsync } from "../features/products/productsSlice";
 import Products from "../features/products/Products";
 import AdBanner from "../components/AdBanner";
-
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import DoubleSlider from "../components/DoubleSlider";
+import { useFilteredProducts } from "../hooks/useFilteredProducts";
 
 function AllProducts() {
-  const [priceRange, setPriceRange] = useState([0, 100]);
-  const [selectedRange, setSelectedRange] = useState([0, 100]);
-
-  const [allSizes, setAllSizes] = useState([]);
-  const [selectedSizes, setSelectedSizes] = useState([]);
-
-  const sneakears = useSelector((store) => store.product.products);
+  const dispatch = useDispatch();
+  const products = useSelector((store) => store.product.products);
   const isLoading = useSelector((store) => store.product.isLoading);
 
-  const dispatch = useDispatch();
-
-  const filteredSneakers = useMemo(() => {
-    const EPSILON = 0.5;
-    return sneakears.filter((item) => {
-      const matchPrices =
-        item.price >= selectedRange[0] - EPSILON &&
-        item.price <= selectedRange[1] + EPSILON;
-      const matchSizes =
-        selectedSizes.length === 0 ||
-        item.sizes.some((el) => selectedSizes.includes(el));
-      return matchPrices && matchSizes;
-    });
-  }, [selectedRange, sneakears, selectedSizes]);
+  const {
+    priceRange,
+    selectedRange,
+    setSelectedRange,
+    allSizes,
+    selectedSizes,
+    setSelectedSizes,
+    filteredSneakers,
+  } = useFilteredProducts(products);
 
   useEffect(() => {
-    if (sneakears.length === 0) {
+    if (products.length === 0) {
       dispatch(getProductDataAsync());
     }
-  }, [dispatch, sneakears.length]);
-
-  useEffect(() => {
-    if (sneakears.length > 0) {
-      const prices = sneakears.map((item) => item.price);
-      const min = Math.min(...prices);
-      const max = Math.max(...prices);
-      setPriceRange([min, max]);
-    }
-  }, [sneakears]);
-
-  useEffect(() => {
-    if (filteredSneakers.length) {
-      const sizes = Array.from(
-        new Set(filteredSneakers.flatMap((product) => product.sizes))
-      );
-      setAllSizes(sizes);
-    }
-  }, [filteredSneakers]);
+  }, [dispatch, products.length]);
 
   function handleSizeFilterChange(e) {
     const { checked, id } = e.target;
@@ -65,7 +37,7 @@ function AllProducts() {
   }
 
   return (
-    <div className="flex mb-24 ">
+    <div className="flex mb-24">
       <div className="w-80 mr-16 mt-5">
         <div className="bg-[#F6F7F8] p-5">
           <span className="uppercase">Prices</span>
@@ -73,12 +45,12 @@ function AllProducts() {
             <DoubleSlider
               min={priceRange[0]}
               max={priceRange[1]}
-              onChange={(range) => setSelectedRange(range)}
+              onChange={setSelectedRange}
             />
           </div>
         </div>
         <div className="bg-[#F6F7F8] p-5 mt-5">
-          <span className="uppercase block mb-5">size:</span>
+          <span className="uppercase block mb-5">Size:</span>
           <div>
             {allSizes.map((size) => {
               const isChecked = selectedSizes.includes(size);
@@ -102,16 +74,14 @@ function AllProducts() {
               );
             })}
           </div>
-          <div>
-            <button
-              className="mt-8 px-3 py-1 bg-gray-300 rounded hover:bg-gray-400"
-              onClick={() => {
-                setSelectedSizes([]);
-              }}
-            >
-              Clear size filters
-            </button>
-          </div>
+          <button
+            className="mt-8 px-3 py-1 bg-gray-300 rounded hover:bg-gray-400"
+            onClick={() => {
+              setSelectedSizes([]);
+            }}
+          >
+            Clear size filters
+          </button>
         </div>
       </div>
       <div className="flex-1">
@@ -131,7 +101,7 @@ function AllProducts() {
             ))}
           </div>
         ) : filteredSneakers.length === 0 ? (
-          <div className="text-center text-gray-500 mt-10 ">
+          <div className="text-center text-gray-500 mt-10">
             No products found. Try adjusting your filters.
           </div>
         ) : (

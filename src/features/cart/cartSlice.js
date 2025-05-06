@@ -46,6 +46,8 @@ export function getTotalPay(state) {
     return total.toFixed(2);
 }
 
+export const getSubtotal = (state) =>
+    state.cart.cart.reduce((acc, el) => acc + (el.price * el.quantity), 0).toFixed(2);
 
 
 

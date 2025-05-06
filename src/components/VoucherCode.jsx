@@ -8,7 +8,8 @@ function VoucherCode() {
 
   function handelForm(e) {
     e.preventDefault();
-    dispatch(changeCupon(code));
+    if (!code) return;
+    dispatch(changeCupon(code.trim()));
   }
   return (
     <form onSubmit={handelForm}>

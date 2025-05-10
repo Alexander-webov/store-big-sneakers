@@ -3,10 +3,10 @@ import comingSoon from "../assets/images/comingSoon.png";
 
 function FeaturedProducts() {
   return (
-    <div className="font-semibold text-4xl  mt-44 mb-44">
+    <div className="font-semibold text-4xl  md:mt-44 mt-10 mb-44">
       <h2 className="text-center">FEATURED PRODUCTS</h2>
-      <div className="flex justify-around mt-14">
-        <div className="flex">
+      <div className="flex mb:justify-center justify-around mt-14 flex-wrap">
+        <div className="flex mb-1  xl:flex-row flex-col ">
           <div>
             <img src={comingSoon} alt="" />
           </div>
@@ -19,7 +19,7 @@ function FeaturedProducts() {
           </div>
         </div>
 
-        <div className="flex">
+        <div className="flex  xl:flex-row flex-col mb-1">
           <div>
             <img src={comingSoon} alt="" />
           </div>
@@ -32,7 +32,7 @@ function FeaturedProducts() {
           </div>
         </div>
 
-        <div className="flex">
+        <div className="flex  xl:flex-row flex-col mb-1">
           <div>
             <img src={comingSoon} alt="" />
           </div>

@@ -10,13 +10,15 @@ function Header() {
   const quantityInCart = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
-    <header className="py-7">
+    <header className="py-7 px-3">
       <div>
         <nav className="flex justify-between items-center">
-          <select>
+          <div>
+            {/*           <select>
             <option value="en">en</option>
             <option value="en">en</option>
-          </select>
+          </select> */}
+          </div>
           <ul className="flex  items-center">
             <li>
               <NavLink to="/profile" className="flex items-center mr-10">
@@ -44,18 +46,26 @@ function Header() {
       </div>
       <div>
         <nav className="mt-7">
-          <ul className="flex font-bold text-xl">
+          <ul className="flex font-bold mb:text-base text-xl">
             <li className="flex-1 ">
-              <Link to="/">BIG-SNEAKERS</Link>
+              <Link className="text-base md:text-xl" to="/">
+                BIG-SNEAKERS
+              </Link>
             </li>
             <li className="mr-10">
-              <NavLink to="/">HOME</NavLink>
+              <NavLink className="text-base md:text-xl" to="/">
+                HOME
+              </NavLink>
             </li>
             <li className="mr-10">
-              <NavLink to="/AllProducts">SNEAKERS</NavLink>
+              <NavLink className="text-base md:text-xl" to="/AllProducts">
+                SNEAKERS
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/contact">CONTACT</NavLink>
+              <NavLink className="text-base md:text-xl" to="/contact">
+                CONTACT
+              </NavLink>
             </li>
           </ul>
         </nav>

@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { clearCart, getTotalPay } from "../features/cart/cartSlice";
-
+import { clearCart, getCart, getTotalPay } from "../features/cart/cartSlice";
+import { addItemInOrder } from "../features/order/orderSlice";
+import { v4 as uuidv4 } from "uuid"; // uniq id
 function Checkout() {
   const dispatch = useDispatch();
   const total = useSelector(getTotalPay);
+  const cart = useSelector(getCart);
 
   const [formData, setFormData] = useState({
     fullName: "",
@@ -24,7 +26,17 @@ function Checkout() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    const newOrder = {
+      id: uuidv4(),
+      date: new Date().toLocaleDateString(),
+      cart,
+      total,
+      status: "Processing",
+    };
+
+    dispatch(addItemInOrder(newOrder));
     setSubmitted(true);
+
     dispatch(clearCart());
   }
 

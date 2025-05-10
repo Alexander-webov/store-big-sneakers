@@ -34,9 +34,9 @@ function BestSeller() {
   };
 
   return (
-    <div className="max-w-[1315px] mt-96  mx-auto">
+    <div className="max-w-[1315px] lg:mt-96 mt-10 mx-auto">
       <h2 className="text-center font-semibold text-4xl">BEST SELLER</h2>
-      <ul className="text-center text-2xl flex justify-center gap-14 mt-9 mb-5">
+      <ul className="text-center text-lg md:text-2xl flex justify-center  md:gap-14 gap-5 mt-9 mb-5">
         <li>
           <button
             onClick={() => handelFilterProducts("ALL")}

@@ -3,9 +3,9 @@ import twitter from "../assets/images/twitter.svg";
 
 function Footer() {
   return (
-    <footer className="py-32 bg-[#DFDFFE]">
+    <footer className="md:py-32 py-10 bg-[#DFDFFE]">
       <div>
-        <div className="flex justify-around">
+        <div className="flex justify-around md:flex-row flex-col md:p-0 px-4">
           <div className="max-w-52">
             <h4 className="text-lg font-medium">BIG-SNEAKERS</h4>
             <p className="mt-4 text-sm">

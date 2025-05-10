@@ -1,9 +1,16 @@
 import Product from "./Product";
 import { motion } from "framer-motion";
 
-function Products({ items = [], cols = 4 }) {
+function Products({
+  items = [],
+  colsFullScreen = 4,
+  colsTableScreen = 3,
+  colsMobScreen = 2,
+}) {
   return (
-    <div className={`grid grid-cols-${cols} justify-items-center gap-5`}>
+    <div
+      className={`grid  xl:grid-cols-4  md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-items-center gap-5`}
+    >
       {items.map((product, i) => (
         <motion.div
           key={product.id}

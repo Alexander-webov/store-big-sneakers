@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { getOrders } from "../features/order/orderSlice";
+import { useSelector } from "react-redux";
+import OrderHistory from "../features/order/OrderHistory";
 
 function MyProfile() {
   const [isEdit, setIsEdit] = useState(false);
@@ -9,20 +12,6 @@ function MyProfile() {
     address: "123 Main Street, New York, NY, USA",
   });
   const [newUser, setNewUser] = useState(user);
-  const orders = [
-    {
-      id: "001",
-      date: "2024-04-12",
-      total: "$150.00",
-      status: "Delivered",
-    },
-    {
-      id: "002",
-      date: "2024-03-20",
-      total: "$89.99",
-      status: "Shipped",
-    },
-  ];
 
   function onEditProfile() {
     setIsEdit(true);
@@ -36,6 +25,7 @@ function MyProfile() {
     setUser(newUser);
     setIsEdit(false);
   }
+
   return (
     <div className="max-w-4xl mx-auto my-10 p-5">
       <h2 className="text-3xl font-bold mb-6 text-center">My Profile</h2>
@@ -120,34 +110,7 @@ function MyProfile() {
         )}
       </div>
 
-      {/* Order History */}
-      <div className="bg-[#F6F7F8] p-5 rounded shadow">
-        <h3 className="text-xl font-semibold mb-4">Order History</h3>
-        {orders.length === 0 ? (
-          <p>You have no orders yet.</p>
-        ) : (
-          <table className="w-full border-collapse">
-            <thead>
-              <tr className="bg-gray-100">
-                <th className="border px-4 py-2 text-left">Order ID</th>
-                <th className="border px-4 py-2 text-left">Date</th>
-                <th className="border px-4 py-2 text-left">Total</th>
-                <th className="border px-4 py-2 text-left">Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              {orders.map((order) => (
-                <tr key={order.id}>
-                  <td className="border px-4 py-2">{order.id}</td>
-                  <td className="border px-4 py-2">{order.date}</td>
-                  <td className="border px-4 py-2">{order.total}</td>
-                  <td className="border px-4 py-2">{order.status}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        )}
-      </div>
+      <OrderHistory />
     </div>
   );
 }

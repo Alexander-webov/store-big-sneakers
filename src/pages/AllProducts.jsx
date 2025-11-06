@@ -15,7 +15,6 @@ function AllProducts() {
 
   const {
     priceRange,
-    selectedRange,
     setSelectedRange,
     allSizes,
     selectedSizes,
